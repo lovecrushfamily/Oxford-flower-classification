@@ -1,0 +1,6 @@
+chúng ta follow theo cái này cho tuần sau
+
+yêu cầu của ĐA2:
+1. Xử lý được dữ liệu, ví dụ: mất cân bằng, thiếu dữ liệu, normalization, ...
+2. Huấn luyện được các mô hình (3-5) cho việc so sánh kết quả
+3. Cải tiến kiến quả bằng một số phương pháp như: fine-tuning tham số, tăng cường dữ liệu, ...
