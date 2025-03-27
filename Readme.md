@@ -1,3 +1,5 @@
+
+
 # Oxford Flower 102 
 
 
@@ -13,3 +15,33 @@ By the way, let's get this shit done.
 
 
 - This project was supposed to run on Kaggle, 'Cause my local machine was just supported with Nvidia 1060, so I mean it's so weak I can feel, But don't worry, I also take advantage of it, find out the limitation of my GPU.
+
+- There's alot of thing concerned me with Kaggle, I'm not gonna run this project in cloud anymore, Use cloud computing for good.
+
+
+#### oke my self, just hear me out clearly,
+
+- First 1, running on local was a bad move => Running all of code on Kaggle for good, and convenient
+
+- Commit on local, but not push on github
+
+- Using kaggle as the main Jupiter server 
+
+- Why : 
+
+    high computational power
+
+    big input and outout source of storage, up to 20GB, too much, must utilize it.
+
+    Everything run into a notebook, I like it, Maybe we have to choose going modular method for good, 
+
+    Kaggle's not really have good syncing process with Github, just commit not pull the new code.
+
+    So use Kaggle from now on for good.
+
+- Kaggle: notebook deep learning, Commit only from Kaggle, not from local or Colab, I don't want to make any wrong move anymore.
+
+- colab : notebook machine learning
+
+- Local : doing something else.
+
