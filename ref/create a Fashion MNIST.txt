@@ -1,0 +1,18 @@
+create a Fashion MNIST project with PyTorch and experiment on these criteria
+- pre-built dataset (MNIST/ CIFAR, COCO) same things.
+- not going any modular
+- using tranfer learning
+- Experiement tracking with tensorboard
+
+
+create another project, like FoodVision/ Oxford flower
+- custom dataset
+- going modular
+- transfer learning
+- Experiement tracking with weight and biases
+- Model deployment
+
+
+- replicating vision transformer
+
+
