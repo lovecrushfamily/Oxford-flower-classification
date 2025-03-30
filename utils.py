@@ -245,3 +245,20 @@ def create_dataloaders(train_dir: str,
                                       pin_memory=True,)
 
     return train_dataloader, valid_dataloader, class_names
+
+# "///////////////////////////////// <Model> /////////////////////////////////////////////////"
+
+
+def save_model(model: nn.Module,
+               target_dir: str = "saved_models",
+               model_name: str = None) -> None:
+
+    model_name = model._get_name() if model_name == None else model_name
+    timestamp = datetime.now().strftime("%d_%m_%Y")         # Format date as day_month_year
+    full_model_name = f"{model_name}_{timestamp}_{torch.cuda.get_device_name()}.pth"       # Combine name with timestamp
+    target_dir_path = Path(target_dir)                      # Convert to Path object
+    target_dir_path.mkdir(parents=True, exist_ok=True)      # Create directory if needed
+    model_save_path = target_dir_path / full_model_name     # Complete file path
+    # Save the model
+    print(f"[INFO] Saving model to: {model_save_path}")     # Log save operation
+    torch.save(obj=model.state_dict(), f=model_save_path)   # Save model state_dict
