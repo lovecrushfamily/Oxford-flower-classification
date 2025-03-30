@@ -35,13 +35,20 @@ By the way, let's get this shit done.
 
     Everything run into a notebook, I like it, Maybe we have to choose going modular method for good, 
 
-    Kaggle's not really have good syncing process with Github, just commit not pull the new code.
+    Kaggle's not really have good syncing process with Github, just commit the notebook directly not pull the new code from local.
 
-    So use Kaggle from now on for good.
+    So use Kaggle from now on for good, do not touching into the notebook_dl in local for good..
 
 - Kaggle: notebook deep learning, Commit only from Kaggle, not from local or Colab, I don't want to make any wrong move anymore.
 
 - colab : notebook machine learning
 
 - Local : doing something else.
+
+
+### *Update*
+
+- Change to the modular to keep the kaggle notebook more clean and clarity to us, 
+
+- And mimic the Pytoch Zero to Hero style, I think It has became standard for decade., or you can make your own way to implement it.
 

@@ -1,5 +1,7 @@
 # Data only need on local machine.
 /data/
+/rose/
+/ref_note/
 
 
 
