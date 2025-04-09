@@ -52,3 +52,4 @@ By the way, let's get this shit done.
 
 - And mimic the Pytoch Zero to Hero style, I think It has became standard for decade., or you can make your own way to implement it.
 
+- Make sure to code anything day by day, this head can't remember anything if missed two days. Never miss two days in a rows.
