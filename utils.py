@@ -254,7 +254,7 @@ def save_model(model: nn.Module,
                model_name: str = None) -> None:
 
     model_name = model._get_name() if model_name == None else model_name
-    timestamp = datetime.now().strftime("%d_%m_%Y")         # Format date as day_month_year
+    timestamp = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")         # Format date as day_month_year
     full_model_name = f"{model_name}_{timestamp}_{torch.cuda.get_device_name()}.pth"       # Combine name with timestamp
     target_dir_path = Path(target_dir)                      # Convert to Path object
     target_dir_path.mkdir(parents=True, exist_ok=True)      # Create directory if needed
