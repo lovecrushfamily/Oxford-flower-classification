@@ -4,3 +4,61 @@ yêu cầu của ĐA2:
 1. Xử lý được dữ liệu, ví dụ: mất cân bằng, thiếu dữ liệu, normalization, ...
 2. Huấn luyện được các mô hình (3-5) cho việc so sánh kết quả
 3. Cải tiến kiến quả bằng một số phương pháp như: fine-tuning tham số, tăng cường dữ liệu, ...
+
+
+
+
+Thầy cần đánh giá đưọc 3 cái kiểu sau.
+Truớc khi sử lý dữ lieuẹ thì kết quả phân lớp như nào,  
+Sau khi xử lý dữ llieuẹ thì kết quả phân lớp như nào 
+Sau khi finetune tham số thì kết quả như nào  cả ML lẫn DL\
+
+
+
+
+
+
+
+3. Tiêu chuẩn bố cục của bài báo ACL
+
+ACL có các tiêu chuẩn rõ ràng về bố cục và định dạng để đảm bảo bài báo dễ đọc và chuyên nghiệp. Dựa trên hướng dẫn chính thức của ACL và tài liệu LaTeX bạn cung cấp, dưới đây là bố cục chuẩn cho một bài báo ACL:
+Cấu trúc nội dung
+
+Một bài báo ACL điển hình có các phần sau (bạn có thể thấy cấu trúc này trong tài liệu “Cognitive Distortions Detection”):
+
+    Title: Tiêu đề ngắn gọn, rõ ràng, thường in đậm, cỡ chữ 15pt, đặt ở đầu trang.
+    Author(s): Tên tác giả và thông tin liên hệ (trong trường hợp ẩn danh, như tài liệu của bạn, ghi “Anonymous ACL submission”).
+    Abstract: Tóm tắt ngắn (khoảng 150-250 từ), trình bày mục tiêu, phương pháp, và kết quả chính. Font chữ 10pt.
+    Introduction: Giới thiệu vấn đề, bối cảnh, và đóng góp của nghiên cứu. Thường nêu rõ các câu hỏi nghiên cứu và mục tiêu.
+    Related Work: Tổng quan các nghiên cứu trước đó, so sánh với công trình của bạn. Phần này giúp đặt nghiên cứu của bạn trong bối cảnh rộng hơn.
+    Methodology: Mô tả chi tiết phương pháp nghiên cứu, bao gồm dữ liệu, mô hình, và kỹ thuật sử dụng. Trong tài liệu của bạn, phần này chia thành các mục con như “Problem Statement”, “MRC-based Extraction”, và “Type Classification”.
+    Experimental Settings: Thông tin về dữ liệu, tiêu chuẩn đánh giá, và cách thiết lập thí nghiệm (ví dụ: Datasets, Baselines, Evaluation Metrics).
+    Results and Discussion: Trình bày kết quả và phân tích, thường có các mục con để so sánh hiệu suất hoặc thảo luận hạn chế.
+    Limitations: Kể từ năm 2023, ACL yêu cầu một phần “Limitations” để nêu rõ giới hạn của nghiên cứu. Phần này không tính vào giới hạn trang.
+    Ethics Statement: Nếu nghiên cứu có liên quan đến dữ liệu nhạy cảm (như dữ liệu tâm lý trong bài của bạn), cần có phần này để thảo luận về đạo đức.
+    Acknowledgements: Cảm ơn tài trợ hoặc hỗ trợ (nếu có).
+    References: Danh sách tài liệu tham khảo, sử dụng định dạng ACL (dựa trên natbib, với lệnh như \citet hoặc \citep).
+    Appendix (tùy chọn): Thông tin bổ sung, như bảng, biểu đồ, hoặc chi tiết kỹ thuật, đặt sau tài liệu tham khảo.
+
+Định dạng trình bày
+
+Dựa trên hướng dẫn của ACL (và phù hợp với tệp LaTeX bạn muốn dùng):
+
+    Font chữ: Sử dụng Times Roman (hoặc Times New Roman) cho toàn bộ văn bản, trừ công thức toán học hoặc chữ không phải Latin. Cỡ chữ:
+        Tiêu đề: 15pt, đậm.
+        Tên tác giả: 12pt.
+        Văn bản chính: 11pt.
+        Tóm tắt: 10pt.
+        Chú thích (caption) và tài liệu tham khảo: 9pt.
+    Cột: Bài báo ACL dùng định dạng 2 cột, trừ tiêu đề và tên tác giả (trải rộng cả hai cột).
+    Kích thước trang: Dùng khổ A4 hoặc Letter, lề 2.5cm mỗi bên.
+    Hình và bảng: Đặt caption ở dưới hình và trên bảng, sử dụng font 9pt. Đảm bảo font trong hình/bảng dễ đọc khi in.
+    Trích dẫn: Sử dụng gói natbib với các lệnh như \citet{chen2023empowering} cho kiểu “Chen et al. (2023)” hoặc \citep{chen2023empowering} cho kiểu “(Chen et al., 2023)”. Tất cả tài liệu tham khảo cần có DOI hoặc URL (nếu có), ưu tiên liên kết đến ACL Anthology.
+    Giới hạn trang:
+        Long paper: Tối đa 8 trang nội dung, cộng thêm 1 trang cho Limitations/Ethics nếu cần.
+        Short paper: Tối đa 4 trang nội dung, cộng thêm 1 trang cho Limitations/Ethics.
+        Tài liệu tham khảo và appendix không tính vào giới hạn trang.
+    Ẩn danh: Nếu gửi bài ẩn danh (như tài liệu của bạn), không ghi tên thật hay thông tin nhận dạng trong bài. Các tham chiếu đến công trình trước của bạn cần được viết lại để tránh tiết lộ danh tính (ví dụ: “trong nghiên cứu trước [Anonymous, 2023]”).
+    Mẫu LaTeX: ACL cung cấp tệp LaTeX chính thức (thường là acl.sty hoặc acl_latex.tex). Bạn đã gặp lỗi liên quan đến acl.sty trong Overleaf, nên mình đã đề xuất dùng class article thay thế. Tuy nhiên, nếu bạn cần đúng định dạng ACL, hãy tải mẫu chính thức từ 
+
+và thêm tệp acl.sty vào dự án Overleaf của bạn.
