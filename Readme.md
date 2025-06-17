@@ -53,3 +53,63 @@ By the way, let's get this shit done.
 - And mimic the Pytoch Zero to Hero style, I think It has became standard for decade., or you can make your own way to implement it.
 
 - Make sure to code anything day by day, this head can't remember anything if missed two days. Never miss two days in a rows.
+
+
+
+
+
+
+
+| Step | What to Do |
+|---------------------|-----------------------------------------------------------------|
+| Data | Use Oxford Flowers dataset, original splits if possible |
+| Preprocessing | Resize, normalize images |
+| Feature Extraction | SIFT, HOG, Color Histograms, BoVW |
+| Feature Encoding | Cluster descriptors, build histograms (if using SIFT/HOG) |
+| Classification | SVM (linear/RBF), Random Forest, etc. |
+| Evaluation | Accuracy, mean per-class accuracy, use original splits |
+
+
+To replicate the work from the original Oxford Flowers dataset paper (especially if focusing on traditional machine learning, not deep learning), you should follow a pipeline similar to what the authors did. Here’s a step-by-step guide tailored for traditional ML, based on the typical methodology in the Oxford Flowers papers:
+
+1. Understand the Dataset
+
+Oxford Flowers 17/102: Contains images of flowers, each labeled with a class (species).
+Data splits: The original paper uses specific train/val/test splits. Try to use the same splits if possible (they are often provided with the dataset).
+
+2. Image Preprocessing
+
+Resize images to a standard size (e.g., 128x128 or 224x224).
+Color normalization (optional, but can help).
+Augmentation is less common in traditional ML, but you can try simple flips/rotations.
+
+3. Feature Extraction
+
+Traditional ML does not use raw pixels. You need to extract features from images. The original paper and many classical approaches use:
+Color histograms (e.g., RGB, HSV histograms)
+SIFT (Scale-Invariant Feature Transform) descriptors
+HOG (Histogram of Oriented Gradients)
+Bag of Visual Words (BoVW): Cluster SIFT/HOG descriptors and represent images as histograms of visual words.
+Other descriptors: Gabor filters, LBP (Local Binary Patterns), etc.
+
+4. Feature Encoding (if needed)
+
+If using SIFT/HOG, you often need to cluster descriptors (e.g., k-means) to create a codebook (visual vocabulary).
+Represent each image as a histogram over this codebook (BoVW).
+
+5. Classification
+
+Train a classifier on the extracted features:
+SVM (Support Vector Machine) is the most common and was used in the original paper.
+Other options: Random Forest, k-NN, Logistic Regression.
+Tune hyperparameters (e.g., SVM kernel, C, gamma).
+
+6. Evaluation
+
+Use the same metrics as the paper (usually accuracy, sometimes mean per-class accuracy).
+Use the same data splits for fair comparison.
+
+7. Comparison & Analysis
+
+Compare your results to those reported in the paper.
+Analyze which features and classifiers work best.
